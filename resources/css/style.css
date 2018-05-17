@@ -97,6 +97,37 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  .truncated-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  header div span {
+    display: none;
+  }
+
+  .main-banner {
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+}
 .supporting {
   display: flex;
   justify-content: center;
@@ -122,6 +153,22 @@ h1 {
   width: 3.5rem;
 }
 
+@media only screen and (max-width: 560px) {
+  .supporting {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .service {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+
+}
+
 .info {
   width: 35%;
   margin-right: 5%;
@@ -140,8 +187,25 @@ h1 {
   max-width: 10rem;
 }
 
+@media only screen and (max-width: 560px) {
+  .info {
+    margin-bottom: 4rem;
+    width: auto;
+  }
+  .info .title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+  }
+}
+
+
 footer {
-  background-color: cadetblue;
+  background-color: azure;
   padding: 4rem 2rem;
   display: flex;
   align-items: center;
@@ -151,4 +215,15 @@ footer img {
   height: 1.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
 }
